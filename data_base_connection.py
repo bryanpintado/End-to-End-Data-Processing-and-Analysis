@@ -17,4 +17,4 @@ engine = create_engine('mysql+pymysql://'+username+':'+password+'@'+host+':'+str
 
 connection = engine.connect()
 
-#df.to_sql('retail_orders', connection, index = False, if_exists='replace')
+df.to_sql('retail_orders', connection, index = False, if_exists='append')
